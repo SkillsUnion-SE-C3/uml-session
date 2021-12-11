@@ -8,7 +8,9 @@ class Customer {
   }
 
   makePurchace(product) {
-    this.balance = this.balance = product.price
+    this.balance = this.balance - product.getPrice()
     this.#mostRecentPurchace = product.name
   }
 }
+
+const newCustomer = new Customer()

@@ -3,7 +3,7 @@ class Triangle extends Shape {
 
   constructor(circumference, sides) {
     super(circumference)
-    this.sides = sides[0]
-    count++
+    this.sides = sides
+    Triangle.count++
   }
 }
